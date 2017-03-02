@@ -1,4 +1,4 @@
-Feature Selection
+## Feature Selection
 
 As per the features_info.txt' file in the data repository
 
@@ -9,7 +9,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
 These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
+```r
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
@@ -27,8 +27,11 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+```
+
 The set of variables that were estimated from these signals are:
 
+```r
 mean(): Mean value
 std(): Standard deviation
 mad(): Median absolute deviation 
@@ -46,17 +49,22 @@ skewness(): skewness of the frequency domain signal
 kurtosis(): kurtosis of the frequency domain signal 
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors.
+```
+
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
+```r
 gravityMean
 tBodyAccMean
 tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
+```
 
 Activity Labels
 
+```r
 WALKING
 WALKING_UPSTAIRS
 WALKING_DOWNSTAIRS
@@ -64,5 +72,6 @@ SITTING
 STANDING
 LAYING
 Other
+``` 
 
 More info available in the README.txt file in the data repository.
